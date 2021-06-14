@@ -1,15 +1,50 @@
 import "./App.css";
-import axios from "./axios";
 import requests from "./requests";
+import Row from "./components/Row";
 function App() {
-  const getNetflixOriginals = async () => {
-    const movies = await axios.get(requests.fetchNetflixOriginals);
-    console.table(movies.data);
-  };
-  getNetflixOriginals();
   return (
     <div className="App">
-      <h1>Let's build Netflix clone using react 🚀 </h1>
+      <Row
+        key="NETFLIX ORIGINALS"
+        title="NETFLIX ORIGINALS"
+        fetchUrl={requests.fetchNetflixOriginals}
+        largeRow
+      />
+      <Row
+        key="Trending now"
+        title="Trending now"
+        fetchUrl={requests.fetchTrending}
+      />
+      <Row
+        key="Top rated"
+        title="Top rated"
+        fetchUrl={requests.fetchTopRated}
+      />
+      <Row
+        key="Action Movies"
+        title="Action Movies"
+        fetchUrl={requests.fetchActionMovies}
+      />
+      <Row
+        key="Comedy Movies"
+        title="Comedy Movies"
+        fetchUrl={requests.fetchComedyMovies}
+      />
+      <Row
+        key="Horror Movies"
+        title="Horror Movies"
+        fetchUrl={requests.fetchHorrorMovies}
+      />
+      <Row
+        key="Romance Movies"
+        title="Romance Movies"
+        fetchUrl={requests.fetchRomanceMovies}
+      />
+      <Row
+        key="Documentaries"
+        title="Documentaries"
+        fetchUrl={requests.fetchDocumentaries}
+      />
     </div>
   );
 }

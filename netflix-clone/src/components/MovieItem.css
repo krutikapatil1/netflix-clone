@@ -1,0 +1,20 @@
+.movie-item {
+    object-fit: contain;
+    width: 100%;
+    max-height: 200px;
+    margin-left: 20px;
+    transition: transform 0.45s;
+    cursor: pointer;
+}
+
+.movie-item:hover {
+    transform: scale(1.2);
+}
+
+.move-item__large {
+    max-height: 400px;
+}
+
+.move-item__large:hover {
+    transform: scale(1.9);
+}
