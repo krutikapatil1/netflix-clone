@@ -6,8 +6,8 @@ const MovieItem = ({ movie, largeRow }) => {
       className={`movie-item ${largeRow && "movie-item__large"}`}
       src={
         largeRow
-          ? `${IMG_BASE_PATH}${movie.backdrop_path}`
-          : `${IMG_BASE_PATH}${movie.poster_path}`
+          ? `${IMG_BASE_PATH}${movie.poster_path}`
+          : `${IMG_BASE_PATH}${movie.backdrop_path}`
       }
       alt="{movie.name}"
     />

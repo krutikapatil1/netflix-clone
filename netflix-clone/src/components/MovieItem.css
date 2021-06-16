@@ -2,8 +2,8 @@
     object-fit: contain;
     width: 100%;
     max-height: 200px;
-    margin-left: 20px;
-    transition: transform 0.45s;
+    margin-left: 5px;
+    transition: transform 0.8s;
     cursor: pointer;
 }
 
@@ -11,10 +11,10 @@
     transform: scale(1.2);
 }
 
-.move-item__large {
-    max-height: 400px;
+.movie-item__large {
+    max-height: 500px;
 }
 
 .move-item__large:hover {
-    transform: scale(1.9);
+    transform: scale(1.5);
 }
